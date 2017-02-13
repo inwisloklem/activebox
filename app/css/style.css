@@ -24,7 +24,16 @@ h2,
 h3 {
   text-transform: uppercase;
 }
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
 .btn {
+  display: inline-block;
   padding: 18px 50px;
   border-radius: 2px;
   background-color: #e84545;
@@ -34,6 +43,18 @@ h3 {
   font-weight: 600;
   line-height: 21px;
   text-transform: uppercase;
+  transition: background-color 0.4s linear;
+}
+.btn:hover {
+  background-color: #ae1616;
+  transition: background-color 0.4s linear;
+}
+.container {
+  margin: auto;
+  max-width: 1170px;
+}
+.features__list {
+  list-style-type: none;
 }
 .features__title {
   color: #2d3033;
@@ -44,13 +65,91 @@ h3 {
   font-size: 14px;
   line-height: 21px;
 }
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 156px;
+  min-height: 100px;
+}
+.menu__list {
+  list-style-type: none;
+}
+.menu__item {
+  display: inline-block;
+  margin-right: 60px;
+}
+.menu__item:last-of-type {
+  margin-right: 0;
+}
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 11px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.page-header {
+  position: relative;
+  background-color: #313454;
+  background-image: url("../img/background.jpg");
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+  min-height: 750px;
+}
+.page-header::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43,46,74,0.95);
+  content: "";
+}
+.page-header__title,
+.page-header__text {
+  position: relative;
+  z-index: 5;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
 .page-header__title {
+  margin-bottom: 40px;
+  max-width: 970px;
   font-size: 65px;
   font-weight: 700;
   line-height: 71px;
   text-transform: uppercase;
 }
 .page-header__text {
+  margin-bottom: 77px;
+  max-width: 950px;
   font-size: 22px;
   line-height: 33px;
+}
+.page-header__btn {
+  position: relative;
+  z-index: 5;
+}
+.projects__list {
+  list-style-type: none;
+}
+.projects__title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+.projects__desc {
+  font-size: 14px;
+  line-height: 15px;
+}
+.visually-hidden {
+  display: none;
 }
