@@ -30,14 +30,23 @@ h3 {
   background-color: #e84545;
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
   font-size: 13px;
+  font-weight: 600;
   line-height: 21px;
   text-transform: uppercase;
 }
+.features__title {
+  color: #2d3033;
+  font-size: 14px;
+}
+.features__text {
+  color: #6c7279;
+  font-size: 14px;
+  line-height: 21px;
+}
 .page-header__title {
-  font-weight: 700;
   font-size: 65px;
+  font-weight: 700;
   line-height: 71px;
   text-transform: uppercase;
 }
