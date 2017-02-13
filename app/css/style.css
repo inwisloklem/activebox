@@ -1,0 +1,21 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Raleway";
+  src: url("../fonts/ralewayregular.woff") format("woff"), url("../fonts/ralewayregular.woff2") format("woff2");
+}
+@font-face {
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Raleway";
+  src: url("../fonts/ralewaybold.woff") format("woff"), url("../fonts/ralewaybold.woff2") format("woff2");
+}
+body {
+  font-weight: normal;
+  font-family: "Raleway", "Helvetica", "Arial", sans-serif;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
