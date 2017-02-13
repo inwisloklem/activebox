@@ -1,11 +1,25 @@
 .features
   &__list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin-top: 80px
+    margin-bottom: 120px
     list-style-type: none
 
+  &__item
+    flex-basis: 33.3%
+
   &__title
+    margin-bottom: 25px
+    padding: 0 25%
+    padding-top: 170px
     color: $shark
+    text-align: center
     font(14px)
 
   &__text
+    padding: 0 8%
     color: $nevada
+    text-align: center
     font(14px, 21px)
