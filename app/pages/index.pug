@@ -8,8 +8,8 @@ html(lang = "en")
 
     header.page-header
       nav.menu
-        .menu__logo
-          img(src = "http://placehold.it/189x24", width = 189, height = 24, alt = "ACTIVEBOX")
+        .menu__logo: a.menu__link
+          img.menu__img(src = "http://placehold.it/189x24", width = 189, height = 24, alt = "ACTIVEBOX")
 
         ul.menu__list
           li.menu__item: a.menu__link Features
@@ -21,7 +21,7 @@ html(lang = "en")
       h2.page-header__title
         | Your Favorite One Page Multi Purpose Template
 
-      .page-header__note
+      p.page-header__note
         | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         | Praesent commodo cursus magna vel scelerisque nisl consectetur et.
 
