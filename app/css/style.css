@@ -17,7 +17,6 @@
   src: url("../fonts/ralewaybold.woff") format("woff"), url("../fonts/ralewaybold.woff2") format("woff2");
 }
 body {
-  font-weight: normal;
   font-family: "Raleway", "Helvetica", "Arial", sans-serif;
 }
 h1,
@@ -35,4 +34,14 @@ h3 {
   font-size: 13px;
   line-height: 21px;
   text-transform: uppercase;
+}
+.page-header__title {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 71px;
+  text-transform: uppercase;
+}
+.page-header__text {
+  font-size: 22px;
+  line-height: 33px;
 }
