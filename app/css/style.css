@@ -1,11 +1,17 @@
 @font-face {
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-family: "Raleway";
   src: url("../fonts/ralewayregular.woff") format("woff"), url("../fonts/ralewayregular.woff2") format("woff2");
 }
 @font-face {
-  font-weight: bold;
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Raleway";
+  src: url("../fonts/ralewaysemibold.woff") format("woff"), url("../fonts/ralewaysemibold.woff2") format("woff2");
+}
+@font-face {
+  font-weight: 700;
   font-style: normal;
   font-family: "Raleway";
   src: url("../fonts/ralewaybold.woff") format("woff"), url("../fonts/ralewaybold.woff2") format("woff2");
@@ -17,5 +23,16 @@ body {
 h1,
 h2,
 h3 {
+  text-transform: uppercase;
+}
+.btn {
+  padding: 18px 50px;
+  border-radius: 2px;
+  background-color: #e84545;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 21px;
   text-transform: uppercase;
 }

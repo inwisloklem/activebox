@@ -20,6 +20,6 @@
   "trailingWhitespace": "never",
   "universal": "never",
   "valid": true,
-  "zeroUnits": "always",
+  "zeroUnits": "never",
   "zIndexNormalize": 5
 }

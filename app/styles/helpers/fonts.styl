@@ -1,13 +1,29 @@
 @font-face
-  font-weight: normal
+  font-weight: 400
   font-style: normal
   font-family: "Raleway"
   src: url("../fonts/ralewayregular.woff") format("woff"), url("../fonts/ralewayregular.woff2") format("woff2")
 
 @font-face
-  font-weight: bold
+  font-weight: 600
+  font-style: normal
+  font-family: "Raleway"
+  src: url("../fonts/ralewaysemibold.woff") format("woff"), url("../fonts/ralewaysemibold.woff2") format("woff2")
+
+@font-face
+  font-weight: 700
   font-style: normal
   font-family: "Raleway"
   src: url("../fonts/ralewaybold.woff") format("woff"), url("../fonts/ralewaybold.woff2") format("woff2")
 
 $font = "Raleway", "Helvetica", "Arial", sans-serif
+
+font($size, $height, $weight = 400, $transform = none)
+  if $weight == 600 || $weight == 700
+    font-weight: $weight
+
+  font-size: $size
+  line-height: $height
+
+  if $transform == "uppercase"
+    text-transform: $transform
