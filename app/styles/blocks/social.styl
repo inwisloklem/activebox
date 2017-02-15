@@ -5,6 +5,7 @@
 
   &__list
     list-style-type: none
+    font-size: 0
 
   &__item
     display: inline-block
@@ -15,6 +16,19 @@
 
   &__link
     color: rgba($white, 0.5)
+
+    &:hover .social__icon
+      border-color: $cinnabar
+      fill: $cinnabar
+
+      transition: all 0.4s linear
+
+  &__icon
+    border: 2px solid $white
+    border-radius: 2px
+    fill: $white
+
+    transition: all 0.4s linear
 
   &__title
     margin-top: 75px

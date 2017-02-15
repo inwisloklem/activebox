@@ -4,11 +4,19 @@
     flex-direction: row
     flex-wrap: wrap
     margin-top: 80px
-    margin-bottom: 120px
+    margin-bottom: 180px
     list-style-type: none
 
   &__item
+    position: relative
     flex-basis: 33.3%
+
+  &__icon
+    position: absolute
+    top: 75px
+    left: 50%
+
+    transform: translateX(-50%)
 
   &__title
     margin-bottom: 25px

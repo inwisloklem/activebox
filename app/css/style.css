@@ -114,11 +114,18 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 80px;
-  margin-bottom: 120px;
+  margin-bottom: 180px;
   list-style-type: none;
 }
 .features__item {
+  position: relative;
   flex-basis: 33.3%;
+}
+.features__icon {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .features__title {
   margin-bottom: 25px;
@@ -349,6 +356,7 @@ ul {
 }
 .social__list {
   list-style-type: none;
+  font-size: 0;
 }
 .social__item {
   display: inline-block;
@@ -359,6 +367,17 @@ ul {
 }
 .social__link {
   color: rgba(255,255,255,0.5);
+}
+.social__link:hover .social__icon {
+  border-color: #e84545;
+  fill: #e84545;
+  transition: all 0.4s linear;
+}
+.social__icon {
+  border: 2px solid #fff;
+  border-radius: 2px;
+  fill: #fff;
+  transition: all 0.4s linear;
 }
 .social__title {
   margin-top: 75px;
