@@ -122,7 +122,7 @@ html(lang = "en")
               p.projects__text Nullam quis risus eget urna mollis ornare
 
     footer.page-footer
-      .page-footer__wrapper
+      .page-footer__wrapper.container
         section.contacts
           h2.visually-hidden Contacts
 
@@ -143,16 +143,15 @@ html(lang = "en")
           h2.visually-hidden About
 
           h3.about__title About ACTIVEBOX
-          p.about__desc
+          p.about__text
             | Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-            | Donec ullamcorper nulla non metus auctor fringilla.
+            | Donec ullamcorper nulla non metus auctor fringilla
 
       section.copyright
         h2.visually-hidden Copyright
 
         p.copyright__text
           | Copyright © 2015 ActiveBox. All Rights Reserved
-        p.copyright__author
-          | Made with #{" "}
-          span.copyright__heart love #{" "}
-          | by Kamal Chaneman
+          br
+          | Made by #[span.copyright__name Ilya Filippov].
+          | Designed with #[span.copyright__heart &#10084;] by #[span.copyright__name Kamal Chaneman]

@@ -10,13 +10,19 @@
 
   &__item
     position: relative
-
     flex-basis: 25%
+    box-sizing: border-box
     min-height: 350px
 
+    border: 1px solid $white
+    border-top: none
+    border-left: none
     background-position: center top
     background-size: cover
     background-repeat: no-repeat
+
+    &:nth-of-type(4n)
+      border-right: none
 
   for $i in 1..8
     &__item:nth-of-type({$i})
