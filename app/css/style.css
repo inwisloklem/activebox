@@ -307,7 +307,7 @@ ul {
   transition: visibility 0s linear 0.4s, opacity 0.4s linear;
 }
 .projects__link {
-  display: block;
+  position: absolute;
   width: 100%;
   height: 100%;
 }
